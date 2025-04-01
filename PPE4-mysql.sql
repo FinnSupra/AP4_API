@@ -210,14 +210,15 @@ CREATE TABLE `indisponibilite` (
 CREATE TABLE `infirmiere` (
   `id` int(11) NOT NULL,
   `fichier_photo` varchar(250) DEFAULT NULL
+  `infChef` BOOL DEFAULT FALSE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `infirmiere` (`id`, `fichier_photo`) VALUES
-(2, NULL),
-(3, NULL),
-(4, NULL),
-(12, NULL),
-(17, NULL);
+(2, NULL, TRUE),
+(3, NULL, FALSE),
+(4, NULL, FALSE),
+(12, NULL, FALSE),
+(17, NULL, FALSE);
 
 CREATE TABLE `infirmiere_badge` (
   `id_infirmiere` int(11) NOT NULL,
