@@ -1,0 +1,55 @@
+AIDE AP4 API
+
+route d'identification
+renvoie token JWT
+route get pour niveau 1 et 3
+route put / delete avec jeton
+jeton pas décripté = erreur
+jeton valide 1h
+recevoir en biror token
+si décrypté, check date validité
+renvoie json
+
+mysql://root:@127.0.0.1:3306/w639v7_ppe4
+
+php -S localhost:8080 -t public
+
+connection vretour 
+0 : pas infirmière
+1 : infirmière
+2 : infirmière en chef
+3 : patient
+4 : administrateur
+5 : no role
+
+/api/visites : toutes les visites (totales ou infirmière log)
+/api/visites/id : toutes les visites d'une infirmière
+/api/visites/id1/id2 : visite avec id2 de l'infimière avec id1
+/api/visite/id : visite de l'infirmière log avec l'id
+
+Jeton JWT
+est ce que jeton ?
+est ce que jeton valide ?
+est ce que jeton valide et pas dépassé ?
+
+Infimière LOGIN :
+ID	Login		    MdP
+2	fnightingale	fnightingale
+3	lwald		    lwald
+4	vhenderson	    vhenderson
+12	jeanne		    jeanne
+17	kilian		    kilian
+
+Si infirmière normale peut:
+voir tous ces soin
+voir soin spécifique ID
+
+Si infirmière en chef peut:
+Voir tous les soins
+Voir tous les soins d'une infirmière
+Voir le soin spécifique ID d'une infirmière
+
+Erreur code :
+401 : Unauthorized Status Code (Erreur de token)
+403 : Forbiden (Role insufisant)
+400 : Bad Request (Format invalide, pas de Bearer)
