@@ -13,7 +13,7 @@ Une API RESTful développée avec le framework Slim (PHP) pour la gestion des vi
 
 1. Cloner le dépôt :
    ```bash
-   git clone [URL_DU_DEPOT]
+   git clone https://github.com/FinnSupra/AP4_API
    ```
 
 2. Installer les dépendances :
