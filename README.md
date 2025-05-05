@@ -13,18 +13,13 @@ Une API RESTful développée avec le framework Slim (PHP) pour la gestion des vi
 
 1. Cloner le dépôt :
    ```bash
-   git clone https://github.com/FinnSupra/AP4_API
+   git clone https://github.com/FinnSupra/AP4_API.git
    ```
-
-2. Installer les dépendances :
-   ```bash
-   composer install
-   ```
-
-3. Importer la base de données :
+   
+2. Importer la base de données :
    - Importer le fichier `w639v7_ppe4.sql` dans PHPMyAdmin
 
-4. Démarrer le serveur :
+3. Démarrer le serveur :
    ```bash
    php -S localhost:8080 -t public
    ```
@@ -55,6 +50,18 @@ L'API utilise JWT pour l'authentification. Pour obtenir un token :
 | Infirmière          | vhenderson    | vhenderson    |
 | Infirmière          | jeanne        | jeanne        |
 | Infirmière          | kilian        | kilian        |
+| Administrateur      | jboullier     | jboullier     |
+| Administrateur      | mmolaire      | mmolaire      |
+| Patient             | glagaffe      | glagaffe      |
+| Patient             | fantasio      | fantasio      |
+| Patient             | prunelle      | prunelle      |
+| Patient             | ademesmaeker  | ademesmaeker  |
+| Patient             | mmolaire      | mmolaire      |
+| Patient             | blabévue      | blabévue      |
+| Patient             | jsoutier      | jsoutier      |
+| Patient             | jlongtarin    | jlongtarin    |
+| Patient             | gustave       | gustave       |
+
 
 ## Routes de l'API
 
@@ -65,7 +72,7 @@ L'API utilise JWT pour l'authentification. Pour obtenir un token :
 
 #### Pour toutes les infirmières
 - `GET /api/visites` - Récupère toutes les visites (accès restreint selon le rôle)
-- `POST /api/visite` - Crée une nouvelle visite
+- `POST /api/visite` - Crée une nouvelle visite (spécification dans le body)
 
 #### Pour une visite spécifique
 - `GET /api/visite/{id}` - Récupère une visite spécifique
@@ -118,10 +125,10 @@ Authorization: Bearer VOTRE_TOKEN_JWT
 
 ## Structure de la Base de Données
 
-La base de données contient les tables :
+L'API à accès aux tables :
 - `visites`
 - `infirmieres`
 - `patients`
-- (autres tables selon votre schéma)
+- `administrateur`
 
 Le fichier SQL complet est disponible dans `w639v7_ppe4.sql`.
