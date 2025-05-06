@@ -43,24 +43,24 @@ L'API utilise JWT pour l'authentification. Pour obtenir un token :
 
 ## Comptes de Test
 
-| Rôle                | Login         | Mot de passe  |
-|---------------------|---------------|---------------|
-| Infirmière en chef  | fnightingale  | fnightingale  |
-| Infirmière          | lwald         | lwald         |
-| Infirmière          | vhenderson    | vhenderson    |
-| Infirmière          | jeanne        | jeanne        |
-| Infirmière          | kilian        | kilian        |
-| Administrateur      | jboullier     | jboullier     |
-| Administrateur      | mmolaire      | mmolaire      |
-| Patient             | glagaffe      | glagaffe      |
-| Patient             | fantasio      | fantasio      |
-| Patient             | prunelle      | prunelle      |
-| Patient             | ademesmaeker  | ademesmaeker  |
-| Patient             | mmolaire      | mmolaire      |
-| Patient             | blabévue      | blabévue      |
-| Patient             | jsoutier      | jsoutier      |
-| Patient             | jlongtarin    | jlongtarin    |
-| Patient             | gustave       | gustave       |
+| ID | Rôle                | Login         | Mot de passe  |
+|----|---------------------|---------------|---------------|
+| 2  | Infirmière en chef  | fnightingale  | fnightingale  |
+| 3  | Infirmière          | lwald         | lwald         |
+| 4  | Infirmière          | vhenderson    | vhenderson    |
+| 12 | Infirmière          | jeanne        | jeanne        |
+| 17 | Infirmière          | kilian        | kilian        |
+| 8  | Administrateur      | jboullier     | jboullier     |
+| 10 | Administrateur      | mmolaire      | mmolaire      |
+| 1  | Patient             | glagaffe      | glagaffe      |
+| 5  | Patient             | fantasio      | fantasio      |
+| 6  | Patient             | prunelle      | prunelle      |
+| 9  | Patient             | ademesmaeker  | ademesmaeker  |
+| 10 | Patient             | mmolaire      | mmolaire      |
+| 11 | Patient             | blabévue      | blabévue      |
+| 13 | Patient             | jsoutier      | jsoutier      |
+| 14 | Patient             | jlongtarin    | jlongtarin    |
+| 16 | Patient             | gustave       | gustave       |
 
 
 ## Routes de l'API
